@@ -1,0 +1,7 @@
+{
+  "name": "TranscreverAppTabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
