@@ -1,0 +1,131 @@
+ion-content{
+    background-color: var(--lightDark-BgColor);
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--lightDark-BgColor);
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: space-between;
+            color: white;
+            background-color: var(--primary-color);
+            width: 100%;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            font-size: 2rem;
+            color: var(--lightDark-color);
+
+            ion-icon {
+                margin: 10px 5px 0px 0px;
+                color: white;
+                background-color: var(--primary-color);
+                border-radius: 2rem;
+            }
+        }
+
+        #transcricoes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+
+            .transcricao {
+                width: 90%;
+                /* height: 150px; */
+                background-color: var(--primary-color);
+                border-radius: .5rem;
+                box-shadow: 0px 0px 3px var(--lightDark-shadow);
+                z-index: 999;
+                overflow: hidden;
+
+                .transcricao_gravacao {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: .5rem;
+                    padding-right: .8rem;
+                    color: white;
+                    width: 100%;
+                    font-weight: 600;
+
+                    .gravacao {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: space-between;
+                        width: 100%;
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+
+                    .dia {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: space-between;
+                        width: 100%;
+                        font-size: 1.5rem;
+
+                        span:nth-child(1) {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 70%;
+                            white-space: nowrap
+                        }
+                    }
+                }
+
+                .transcricao_mensagem {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    /* height: 100%; */
+                    color: black;
+                    background-color: white;
+                    padding: .5rem;
+
+                    .mensagem {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+
+                        .btn_mensagem {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: .4rem;
+                            font-weight: 500;
+                            color: var(--primary-color);
+                            
+                            ion-icon {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+  

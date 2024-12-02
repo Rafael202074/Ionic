@@ -1,2 +1,10 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+    --primary-color: orangered;
+    --primary-color-highlight: #ffa500;
+    --lightDark-BgColor: white;
+    --lightDark-color: black;
+    --lightDark-shadow: rgba(0, 0, 0, 0.482);
+    --lightDark-tabsIcon: #595959;
+}

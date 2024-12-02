@@ -35,3 +35,9 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+.item-radio-checked.sc-ion-select-popover-md {
+    --background: rgba(255, 68, 0, 0.8);
+    --background-focused: rgba(255, 68, 0, 0.8);
+    --background-hover: rgba(255, 68, 0, 0.8);
+}

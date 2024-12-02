@@ -1,17 +1,51 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Translator
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  
+  <div id="content">
+    <div class="header">
+      <ion-icon name="chevron-back-circle-outline"></ion-icon>
+      <ion-icon name="contrast-outline" (click)="toggle_lightDarkMode()"></ion-icon>
+    </div>
+    <div class="title">
+      <ion-icon name="pulse"></ion-icon>
+      <h2>Feedback</h2>
+    </div>
+    <div id="feedbacks">
+      <ng-container *ngIf="feedbacks.length > 0">
+        <div class="feedback" *ngFor="let feedback of feedbacks">
+            <div class="feedback_gravacao">
+              <div class="gravacao">
+                <span>{{ feedback.duracaoDia }}</span>
+                <span>{{ feedback.duracao }}</span>
+                <!-- <span>1:46</span> -->
+              </div>
+              <div class="dia">
+                <!-- <span>Hoje</span> -->
+                <span>{{ feedback.comentario }}</span>
+              </div>
+            </div>
+            <div class="feedback_mensagem">
+              <div class="tempo">
+                <span>Tempo Falado de:</span>
+              </div>
+              <div class="mensagem">
+                <span>{{ feedback.duracaoPorExtenso }}</span>
+                <!-- <span>1 minuto e 46 segundos</span> -->
+                <span class="star">
+                  Classificação: {{ feedback.estrelas }} ⭐
+                </span>
+              </div>
+            </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
